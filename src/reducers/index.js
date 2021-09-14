@@ -24,6 +24,11 @@ export const mainReducer = (state = initialState, action) => {
         ...state,
         count: state.count + 1,
       }
+    case 'DECREMENT':
+      return {
+        ...state,
+        count: state.count - 1,
+      }
     default:
       console.log('I fell into default!')
       return state
